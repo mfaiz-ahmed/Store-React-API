@@ -29,9 +29,9 @@ export default function Products() {
         <h1 className='text-center mt-5 fw-bolder'>PRODUCTS</h1>
         <Grid container >
         {products.map((x:any , i:number)=> 
-            <Box key={i} width={"30%"} className="p-5 border shadow rounded m-3">
+            <Box key={i} width={"30%"} className="p-3 border shadow rounded m-3">
                 <img className="p-2" src={x.image} width={"100%"} alt="Product Image" />
-                <Box className='my-3'>
+                <Box className='mt-5'>
                     <h5>{x.title}</h5>
                     <h3 className='my-3'>{x.category}</h3>
                     <h2 className='my-3'>Price: {x.price}$</h2>
