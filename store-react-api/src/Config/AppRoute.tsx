@@ -5,7 +5,7 @@ import Products from '../Pages/Products'
 
 export default function AppRoute() {
   return (
-    <>
+    <>  
     <BrowserRouter>
     <Routes>
         <Route path='Products' element={<Products/>} />

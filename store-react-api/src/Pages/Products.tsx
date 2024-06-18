@@ -14,8 +14,6 @@ export default function Products() {
         getApi('products')
         .then((res)=>{
             setProducts([...res.data])
-            console.log(res.data);
-            
         })
         .catch((err)=>{
             console.log(err);
@@ -35,7 +33,7 @@ export default function Products() {
         {products.map((x:any , i:number)=> 
             <Box onClick={()=>{
                 navigate(`/SingleProduct/${x.id}`)
-            }} key={i} width={"30%"} className="p-4 border shadow rounded m-3">
+            }} key={i} width={"30%"} className="p-4 pointer border shadow rounded m-3">
                 <img className="p-2" src={x.image} width={"100%"} alt="Product Image" />
                 <Box className='mt-5'>
                     <h5>{x.title}</h5>
