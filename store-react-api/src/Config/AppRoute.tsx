@@ -9,7 +9,7 @@ export default function AppRoute() {
     <BrowserRouter>
     <Routes>
         <Route path='Products' element={<Products/>} />
-        <Route path='Singleproducts' element={<SingleProduct/>} />
+        <Route path='SingleProduct/:id' element={<SingleProduct/>} />
     </Routes>
     </BrowserRouter>
     </>
