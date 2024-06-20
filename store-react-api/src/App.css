@@ -10,3 +10,6 @@ font-family: Lato;}
 
 
 .pointer{cursor: pointer;}
+
+
+.capital{text-transform: capitalize;}
