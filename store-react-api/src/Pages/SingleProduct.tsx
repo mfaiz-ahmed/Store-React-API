@@ -42,7 +42,7 @@ export default function SingleProduct() {
         <h3 className="mt-5 capital">{model.category}</h3>
         <h5 className="my-5">{model.description}</h5>
         <h6 className="fw-bolder">Price: {model.price}$</h6>
-      </Box>
+        </Box>
     </Box>
     
     </>
